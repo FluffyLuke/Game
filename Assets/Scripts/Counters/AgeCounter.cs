@@ -12,7 +12,7 @@ public class AgeCounter : MonoBehaviour
     private TMP_Text text;
     private void Start()
     {
-        this.text.text = "Wiek: " + statsObject.Age.ToString();
+        this.text.text = statsObject.Age.ToString();
         StatsObject.dataUpdated += UpdateCounter;
     }
 
