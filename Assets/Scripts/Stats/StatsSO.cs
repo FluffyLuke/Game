@@ -1,6 +1,8 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Stats.Achievements;
+using Stats.OtherStats;
 using TMPro;
 using UnityEngine;
 
@@ -20,9 +22,39 @@ public class StatsObject : ScriptableObject
     private int age;
     [ SerializeField ]
     private int yearOfDeath = 40;
-
+    [ SerializeField ]
+    private int popularity = 5;
+    [ SerializeField ]
+    private int maxPopularity = 100;
+    [ SerializeField ]
+    private List<OtherStat> other;
+    [SerializeField] 
+    private List<Achievement> achievements;
     public int YearOfDeath => yearOfDeath;
-    
+
+    public int Popularity
+    {
+        get => popularity;
+        set => popularity = value;
+    }
+
+    public int MaxPopularity
+    {
+        get => maxPopularity;
+    }
+
+    public List<OtherStat> Other
+    {
+        get => other;
+        set => other = value;
+    }
+
+    public List<Achievement> Achievements
+    {
+        get => achievements;
+        set => achievements = value;
+    }
+
     private void UpdateData()
     {
         dataUpdated?.Invoke();
@@ -54,26 +86,4 @@ public class StatsObject : ScriptableObject
             dataUpdated?.Invoke(); 
         }
     }
-
-    public void addGold(int additionalGold)
-    {
-        this.gold += additionalGold;
-        dataUpdated?.Invoke(); 
-    }
-    public void subtractGold(int ammount)
-    {
-        this.gold -= ammount;
-        dataUpdated?.Invoke(); 
-    }
-    public void addYear(int additionalYear)
-    {
-        this.year += additionalYear;
-        dataUpdated?.Invoke(); 
-    }
-    public void addAge(int additionalAge)
-    {
-        this.age += additionalAge;
-        dataUpdated?.Invoke(); 
-    }
-    
 }

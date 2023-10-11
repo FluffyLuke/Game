@@ -36,16 +36,7 @@ public class GameManager : MonoBehaviour
     {
         print("Round has ended!");
         round += 1;
-        statsObject.addAge(1);
-        statsObject.addYear(1);
-    }
-
-    public void Test()
-    {
-        print("TESTING!");
-        round += 1;
-        statsObject.addAge(1);
-        statsObject.addYear(1);
-        statsObject.addGold(100);
+        statsObject.Age = statsObject.Age + 1;
+        statsObject.Year = statsObject.Year + 1;
     }
 }
