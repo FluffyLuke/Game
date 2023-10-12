@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3fecc99fc5e454f9e79cc109db968f0, type: 3}
+  m_Name: Dworek_event
+  m_EditorClassIdentifier: 
+  eventText: Kupno Dworku
+  eventDescription: Pojawila sie mozliwosc kupna dworku w Chorazczyznie
+  whenHappensRound: 9
+  background: {fileID: 21300000, guid: 718be7b8cca746b47a3e57c60599930f, type: 3}
+  option1: {fileID: 11400000, guid: cdb82f77c0ce8e64eaf765c58a227439, type: 2}
+  option2: {fileID: 11400000, guid: 294e2985867c4234cb26748cfe66d388, type: 2}
+  ifTwoOptions: 1

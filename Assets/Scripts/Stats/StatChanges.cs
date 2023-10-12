@@ -40,6 +40,7 @@ namespace Stats.OtherStats
             stats.Gold += Gold;
             stats.GoldIncome += GoldIncome;
             stats.ActionPoints += ActionPoints;
+            stats.StartingActionPoints += StartingActionPoints;
             stats.ActionPoints -= costActionPoints;
             stats.Gold -= costGold;
             return true;

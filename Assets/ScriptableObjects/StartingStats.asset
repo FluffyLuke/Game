@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a54462874631b946aeb011fbb4b698d, type: 3}
   m_Name: StartingStats
   m_EditorClassIdentifier: 
+  ifGameStarted: 0
   year: 1814
   endGame: 1876
   gold: 100
@@ -21,5 +22,5 @@ MonoBehaviour:
   maxPopularity: 100
   achievements: []
   effects: []
-  actionPoints: 10
-  startingActionPoints: 10
+  actionPoints: 15
+  startingActionPoints: 15

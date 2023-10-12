@@ -32,7 +32,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        if (stats.ifGameStarted)
+        if (!stats.ifGameStarted)
         {
             StartGame();
         }
@@ -60,8 +60,8 @@ public class GameManager : MonoBehaviour
     private async void StartRound()
     {
         round += 1;
-        stats.Age += 1;
-        stats.Year += 1;
+        stats.Age += 2;
+        stats.Year += 2;
         print("Round starting new round! -> " + round);
 
         if (events.Where(x => x.whenHappensRound == round).ToList().Count == 0)
@@ -97,6 +97,10 @@ public class GameManager : MonoBehaviour
     {
         print("Round has ended!");
         StartRound();
+        if (round == 30)
+        {
+            SceneManager.LoadScene("End");
+        }
     }
 
  
@@ -114,7 +118,10 @@ public class GameManager : MonoBehaviour
          }
          eventText.text = e.eventText;
          eventDescription.text = e.eventDescription;
-         BackgroundImage.sprite = e.background;
+         if (e.background != null)
+         {
+             BackgroundImage.sprite = e.background;
+         }
          var option = 1;
          while (true)
          {
@@ -134,12 +141,15 @@ public class GameManager : MonoBehaviour
                  }
                  button1Text.text = e.option1.buttonText;
                  button2Text.text = e.option2.buttonText;
+                 print("cos21");
                  print("Running option check");
                  optionClick = new TaskCompletionSource<int>();
+                 print("cos23");
                  option = await optionClick.Task;
-                 print("cos2");
+                 print("cos24");
                  button1.gameObject.SetActive(false);
                  button2.gameObject.SetActive(false);
+                 print("cos25");
              }
              eventStatChanges.text = e.GetOption(option).eventStatChangesText;
              print("cos");
