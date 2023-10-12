@@ -18,4 +18,4 @@ MonoBehaviour:
   background: {fileID: 0}
   option1: {fileID: 11400000, guid: 8f41fe8fd5cb25f448438923f2521afd, type: 2}
   option2: {fileID: 11400000, guid: 1ca65b373697bfc49881a06e9cdd376d, type: 2}
-  ifTwoOptions: 0
+  ifTwoOptions: 1

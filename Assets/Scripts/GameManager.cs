@@ -34,6 +34,7 @@ public class GameManager : MonoBehaviour
     {
         if (!stats.ifGameStarted)
         {
+            stats.ifGameStarted = true;
             StartGame();
         }
         stats.Age = stats.Age;
@@ -118,6 +119,7 @@ public class GameManager : MonoBehaviour
          }
          eventText.text = e.eventText;
          eventDescription.text = e.eventDescription;
+         eventStatChanges.text = "";
          if (e.background != null)
          {
              BackgroundImage.sprite = e.background;
@@ -153,9 +155,12 @@ public class GameManager : MonoBehaviour
                  button2.gameObject.SetActive(false);
                  print("cos25");
              }
-             eventStatChanges.text = e.GetOption(option).eventStatChangesText;
-             print("cos");
-             if (e.UpdateStats(stats, round, events, option)) break;
+             print("cos" + e.GetOption(option).eventStatChangesText);
+             if (e.UpdateStats(stats, round, events, option))
+             {
+                 eventStatChanges.text = e.GetOption(option).eventStatChangesText;
+                 break;
+             }
              print("Cost to high!");
          }
          foreach (var actionButton in actionButtons)

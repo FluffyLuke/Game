@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 95302f63b99a4673946a4cb61597c7cf, type: 3}
-  m_Name: RestEvent
+  m_Name: Zima_Stulecia_effect
   m_EditorClassIdentifier: 
   remainingTime: -1
-  duration: 1
+  duration: 0
   goldIncome: 0
-  effectName: Wypoczety
+  effectName: 
   startingActionPoints: 0

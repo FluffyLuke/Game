@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 211442e9f9b940b4bfe530ce36e0282e, type: 3}
   m_Name: Powstanie_option2
   m_EditorClassIdentifier: 
+  ifGameStarted: 0
   year: 0
   endGame: 0
   gold: 0
@@ -24,7 +25,8 @@ MonoBehaviour:
   actionPoints: 0
   startingActionPoints: 0
   eventStatChangesText: -1000zl
-  buttonText: Uciekaj przed powstaniem\n(-1000zl)
+  buttonText: Uciekaj przed powstaniem (-1000zl)
   additionalEvents: []
   costGold: 1000
   costActionPoints: 0
+  nazwaSceny: 

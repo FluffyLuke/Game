@@ -78,7 +78,14 @@ public class StatsObject : ScriptableObject
     {
         get => popularity;
         set {
-            popularity = value;
+            if (!(popularity + value < 0))
+            {
+                popularity = value;
+            }
+            else
+            {
+                popularity = 1;
+            }
             dataUpdated?.Invoke(); 
         }
     }
@@ -116,7 +123,14 @@ public class StatsObject : ScriptableObject
     {
         get => gold;
         set {
-            gold = value;
+            if (!(gold + value < 0))
+            {
+                gold = value;
+            }
+            else
+            {
+                gold = 0;
+            }
             dataUpdated?.Invoke(); 
         }
     }

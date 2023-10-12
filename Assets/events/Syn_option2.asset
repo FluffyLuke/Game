@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 211442e9f9b940b4bfe530ce36e0282e, type: 3}
   m_Name: Syn_option2
   m_EditorClassIdentifier: 
+  ifGameStarted: 0
   year: 0
   endGame: 0
   gold: 0
@@ -23,8 +24,9 @@ MonoBehaviour:
   effects: []
   actionPoints: 0
   startingActionPoints: 0
-  eventStatChangesText: 
+  eventStatChangesText: Nie wyslales syna na studia
   buttonText: Nie wysylaj
   additionalEvents: []
   costGold: 0
   costActionPoints: 0
+  nazwaSceny: 

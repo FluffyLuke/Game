@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 211442e9f9b940b4bfe530ce36e0282e, type: 3}
   m_Name: Dworek_option1
   m_EditorClassIdentifier: 
+  ifGameStarted: 0
   year: 0
   endGame: 0
   gold: 0
@@ -24,7 +25,8 @@ MonoBehaviour:
   actionPoints: 0
   startingActionPoints: 0
   eventStatChangesText: -1000zl, +20pkt pop
-  buttonText: Kup dworek\n(-1000zl, +20pkt pop.)
+  buttonText: Kup dworek (-1000zl, +20pkt pop.)
   additionalEvents: []
   costGold: 1000
   costActionPoints: 0
+  nazwaSceny: 
