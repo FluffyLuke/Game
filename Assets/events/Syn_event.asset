@@ -16,6 +16,6 @@ MonoBehaviour:
   eventDescription: Twoj syn chce udac sie na studia
   whenHappensRound: 21
   background: {fileID: 0}
-  option1: {fileID: 11400000, guid: 8f41fe8fd5cb25f448438923f2521afd, type: 2}
-  option2: {fileID: 11400000, guid: 8f41fe8fd5cb25f448438923f2521afd, type: 2}
+  option1: {fileID: 11400000, guid: ab5cf912d847b7c4293fe66ef2f2e6e1, type: 2}
+  option2: {fileID: 11400000, guid: 804b2072f45104c44a7c4e9b8ebd6622, type: 2}
   ifTwoOptions: 1

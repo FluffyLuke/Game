@@ -99,7 +99,7 @@ public class GameManager : MonoBehaviour
         StartRound();
         if (round == 30)
         {
-            SceneManager.LoadScene("End");
+            SceneManager.LoadScene("Scenes/End");
         }
     }
 
@@ -122,23 +122,25 @@ public class GameManager : MonoBehaviour
          {
              BackgroundImage.sprite = e.background;
          }
+         print("Set background sprite and text");
          var option = 1;
          while (true)
          {
+             print("Checking if event has options");
              if (e.IfOption())
              {
                  button1.gameObject.SetActive(true);
                  button2.gameObject.SetActive(true);
                  button1.enabled = true;
                  button2.enabled = true;
-                 if (e.option1.costActionPoints > stats.ActionPoints || e.option1.costGold > stats.Gold)
-                 {
-                     button1.enabled = false;
-                 }
-                 if (e.option2.costActionPoints > stats.ActionPoints || e.option2.costGold > stats.Gold)
-                 {
-                     button2.enabled = false;
-                 }
+                 // if (e.option1.costActionPoints > stats.ActionPoints || e.option1.costGold > stats.Gold)
+                 // {
+                 //     button1.enabled = false;
+                 // }
+                 // if (e.option2.costActionPoints > stats.ActionPoints || e.option2.costGold > stats.Gold)
+                 // {
+                 //     button2.enabled = false;
+                 // }
                  button1Text.text = e.option1.buttonText;
                  button2Text.text = e.option2.buttonText;
                  print("cos21");
