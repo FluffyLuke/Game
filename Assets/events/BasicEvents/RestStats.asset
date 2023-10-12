@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 211442e9f9b940b4bfe530ce36e0282e, type: 3}
   m_Name: RestStats
   m_EditorClassIdentifier: Assembly-CSharp::StatsObject/StatChanges
+  ifGameStarted: 0
   year: 0
   endGame: 0
   gold: 0
@@ -24,9 +25,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 63c87ae50cb355d4d8c6e078eb644f5f, type: 2}
   actionPoints: 5
   startingActionPoints: 0
-  eventStatChangesText: "Tracisz reszt\u0119 swoich punkt\xF3w akcji. W nast\u0119pnej
-    turze b\u0119dziesz mia\u0142 ich wi\u0119cej."
+  eventStatChangesText: "Tracisz reszte swoich punkt\xF3w akcji. W nast\u0119pnej
+    turze bedziesz mial ich wiecej."
   buttonText: 
   additionalEvents: []
   costGold: 0
   costActionPoints: 0
+  nazwaSceny: 

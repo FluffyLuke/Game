@@ -24,7 +24,7 @@ MonoBehaviour:
   effects: []
   actionPoints: 0
   startingActionPoints: 0
-  eventStatChangesText: "Wygra\u0142e\u015B w karty 400 z\u0142!"
+  eventStatChangesText: Wygrales w karty 400 zl!
   buttonText: 
   additionalEvents: []
   costGold: 200

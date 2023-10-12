@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Zona_event
   m_EditorClassIdentifier: 
   eventText: 'Spodobala ci sie Zofia Jablonkowska '
-  eventDescription: "Mo\u017Cesz stara\u0107 si\u0119 o jej r\u0119k\u0119, za"
+  eventDescription: "Mo\u017Cesz stara\u0107 si\u0119 o jej reke, za 50 zl"
   whenHappensRound: 3
   background: {fileID: 0}
   option1: {fileID: 11400000, guid: 836c26e16dbe7ad4cb99a26b0279a87d, type: 2}

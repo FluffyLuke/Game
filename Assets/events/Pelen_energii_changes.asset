@@ -25,7 +25,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e423686392ef14c4eb91b34852f066d2, type: 2}
   actionPoints: 0
   startingActionPoints: 0
-  eventStatChangesText: +10pkt akcji
+  eventStatChangesText: +10 pkt akcji
   buttonText: 
   additionalEvents: []
   costGold: 0

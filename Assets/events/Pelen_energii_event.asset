@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3fecc99fc5e454f9e79cc109db968f0, type: 3}
   m_Name: Pelen_energii_event
   m_EditorClassIdentifier: 
-  eventText: Pelen energii
-  eventDescription: Czujesz sie gotow do pracy
+  eventText: Czujesz sie gotow do pracy
+  eventDescription: Pelen energii
   whenHappensRound: 0
   background: {fileID: 0}
   option1: {fileID: 11400000, guid: af40349dc0bc00947a3a07a49ba839c9, type: 2}

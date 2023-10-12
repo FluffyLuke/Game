@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3fecc99fc5e454f9e79cc109db968f0, type: 3}
   m_Name: GoToWork
   m_EditorClassIdentifier: 
-  eventText: "Dogl\u0105dasz i pomna\u017Casz sw\xF3j maj\u0105tek."
+  eventText: Dogladasz i pomnazasz swoj majatek.
   eventDescription: "Idziesz dogl\u0105da\u0107 maj\u0105tku."
   whenHappensRound: -1
   background: {fileID: 0}

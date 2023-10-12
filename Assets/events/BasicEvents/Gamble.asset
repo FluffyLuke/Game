@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3fecc99fc5e454f9e79cc109db968f0, type: 3}
   m_Name: Gamble
   m_EditorClassIdentifier: 
-  eventText: "Postanowi\u0142e\u015B p\xF3j\u015B\u0107 gra\u0107 w karty."
+  eventText: Postanowiles pojsc grac w karty.
   eventDescription: Grasz w karty.
   whenHappensRound: -1
   background: {fileID: 0}
