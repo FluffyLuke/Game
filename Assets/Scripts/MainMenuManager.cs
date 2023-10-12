@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuManager : MonoBehaviour
 {
+    public StatsObject stats;
     public void exit()
     {
         Application.Quit(); 
@@ -12,6 +13,7 @@ public class MainMenuManager : MonoBehaviour
 
     public void play()
     {
+        stats.ifGameStarted = false;
         SceneManager.LoadScene("MainGame");
     } 
 }

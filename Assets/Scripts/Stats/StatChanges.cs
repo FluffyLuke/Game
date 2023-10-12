@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Stats.OtherStats
 {
@@ -11,6 +12,7 @@ namespace Stats.OtherStats
         public List<Events.Event> additionalEvents;
         public int costGold;
         public int costActionPoints;
+        public string nazwaSceny;
         public bool UpdateStats(StatsObject stats, List<Events.Event> events)
         {
             if (stats.ActionPoints < costActionPoints)

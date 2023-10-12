@@ -6,6 +6,7 @@ using Stats.OtherStats;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 using Button = UnityEngine.UI.Button;
 using Event = Events.Event;
@@ -31,7 +32,11 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        StartGame();
+        if (stats.ifGameStarted)
+        {
+            StartGame();
+        }
+        stats.Age = stats.Age;
     }
     
     public void StartGame()
@@ -110,9 +115,9 @@ public class GameManager : MonoBehaviour
          eventText.text = e.eventText;
          eventDescription.text = e.eventDescription;
          BackgroundImage.sprite = e.background;
+         var option = 1;
          while (true)
          {
-             var option = 1;
              if (e.IfOption())
              {
                  button1.gameObject.SetActive(true);
@@ -144,6 +149,12 @@ public class GameManager : MonoBehaviour
          foreach (var actionButton in actionButtons)
          {
              actionButton.enabled = true;
+         }
+
+         var chosenOption = option == 1 ? e.option1 : e.option2;
+         if (chosenOption.nazwaSceny.Length > 0)
+         {
+             SceneManager.LoadScene(chosenOption.nazwaSceny);
          }
          print("Returning event" + e.eventDescription);
          return true;

@@ -10,6 +10,7 @@ public class StatsObject : ScriptableObject
 {
     public delegate void DataUpdated();
 
+    public bool ifGameStarted;
     public static event DataUpdated dataUpdated;
     //General Stats
     [ SerializeField ]
