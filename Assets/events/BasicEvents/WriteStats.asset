@@ -17,7 +17,7 @@ MonoBehaviour:
   gold: 0
   goldIncome: 0
   age: 0
-  popularity: 5
+  popularity: 3
   maxPopularity: 100
   achievements: []
   effects: []
@@ -27,4 +27,4 @@ MonoBehaviour:
   buttonText: 
   additionalEvents: []
   costGold: 0
-  costActionPoints: 0
+  costActionPoints: 3

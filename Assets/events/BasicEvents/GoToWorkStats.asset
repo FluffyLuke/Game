@@ -14,17 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::StatsObject/StatChanges
   year: 0
   endGame: 0
-  gold: 0
+  gold: 100
   goldIncome: 0
   age: 0
-  popularity: 5
+  popularity: 0
   maxPopularity: 100
   achievements: []
   effects: []
   actionPoints: 0
   startingActionPoints: 0
-  eventStatChangesText: 
+  eventStatChangesText: "Zarobi\u0142e\u015B 100 z\u0142."
   buttonText: 
   additionalEvents: []
   costGold: 0
-  costActionPoints: 1
+  costActionPoints: 5

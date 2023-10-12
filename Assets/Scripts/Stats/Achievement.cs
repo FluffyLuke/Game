@@ -2,8 +2,10 @@ using UnityEngine;
 
 namespace Stats.OtherStats
 {
-    public class Achievement : MonoBehaviour
+    [CreateAssetMenu(fileName = "Achievement", menuName = "ScriptableObjects/Achievement", order = 5)]
+    public class Achievement : ScriptableObject
     {
         public string achievementName;
+        public string longDescription;
     }
 }

@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95302f63b99a4673946a4cb61597c7cf, type: 3}
   m_Name: Effect
   m_EditorClassIdentifier: 
-  remainingTime: 0
-  duration: 3
-  goldIncome: -15
-  effectName: Dupa
-  startingActionPoints: -5
+  remainingTime: -1
+  duration: 0
+  goldIncome: 0
+  effectName: 
+  startingActionPoints: 10

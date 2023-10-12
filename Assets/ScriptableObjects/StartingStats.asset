@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a54462874631b946aeb011fbb4b698d, type: 3}
   m_Name: StartingStats
   m_EditorClassIdentifier: 
-  year: 1500
-  endGame: 1600
+  year: 1814
+  endGame: 1876
   gold: 100
   goldIncome: 0
   age: 10

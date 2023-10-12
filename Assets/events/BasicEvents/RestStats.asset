@@ -17,13 +17,14 @@ MonoBehaviour:
   gold: 0
   goldIncome: 0
   age: 0
-  popularity: 5
+  popularity: 0
   maxPopularity: 100
   achievements: []
   effects: []
   actionPoints: 0
   startingActionPoints: 0
-  eventStatChangesText: 
+  eventStatChangesText: "Tracisz reszt\u0119 swoich punkt\xF3w akcji. W nast\u0119pnej
+    turze b\u0119dziesz mia\u0142 ich wi\u0119cej."
   buttonText: 
   additionalEvents: []
   costGold: 0

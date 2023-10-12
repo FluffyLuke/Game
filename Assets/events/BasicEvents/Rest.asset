@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3fecc99fc5e454f9e79cc109db968f0, type: 3}
   m_Name: Rest
   m_EditorClassIdentifier: 
-  eventText: Restujesz
-  eventDescription: Odpoczywasz
+  eventText: "Postanowi\u0142e\u015B odpocz\u0105\u0107 na jaki\u015B czas."
+  eventDescription: Odpoczywasz.
   whenHappensRound: -1
   background: {fileID: 0}
   option1: {fileID: 11400000, guid: 73c6bb8c4daf8104c9be0678d8f0dffa, type: 2}
   option2: {fileID: 11400000, guid: 73c6bb8c4daf8104c9be0678d8f0dffa, type: 2}
+  ifTwoOptions: 0

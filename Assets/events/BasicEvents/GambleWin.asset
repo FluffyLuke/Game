@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::StatsObject/StatChanges
   year: 0
   endGame: 0
-  gold: 0
+  gold: 600
   goldIncome: 0
   age: 0
   popularity: 5
@@ -23,8 +23,8 @@ MonoBehaviour:
   effects: []
   actionPoints: 0
   startingActionPoints: 0
-  eventStatChangesText: 
+  eventStatChangesText: "Wygra\u0142e\u015B w karty 400 z\u0142!"
   buttonText: 
   additionalEvents: []
-  costGold: 0
+  costGold: 200
   costActionPoints: 0

@@ -23,8 +23,8 @@ MonoBehaviour:
   effects: []
   actionPoints: 0
   startingActionPoints: 0
-  eventStatChangesText: 
+  eventStatChangesText: "Przegra\u0142e\u015B w karty 200 z\u0142!"
   buttonText: 
   additionalEvents: []
-  costGold: 0
+  costGold: 200
   costActionPoints: 0

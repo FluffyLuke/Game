@@ -9,10 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95302f63b99a4673946a4cb61597c7cf, type: 3}
-  m_Name: Effect
+  m_Script: {fileID: 11500000, guid: e550e65ec6fb478a9c19e898a6d30eb7, type: 3}
+  m_Name: Achievement
   m_EditorClassIdentifier: 
-  duration: 0
-  goldIncome: 0
-  effectName: Dupsko
-  startingActionPoints: 0
+  achievementName: 
+  longDescription: 

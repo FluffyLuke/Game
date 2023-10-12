@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d3fecc99fc5e454f9e79cc109db968f0, type: 3}
-  m_Name: Event3
+  m_Name: SUPER EVENT
   m_EditorClassIdentifier: 
-  eventText: Event3
-  eventDescription: Event3Opis
-  whenHappensRound: 3
-  background: {fileID: 21300000, guid: c47547b21388362439135121d084740a, type: 3}
-  option1: {fileID: 11400000, guid: a0f151f16c59f304e8efbcc6c90774fe, type: 2}
-  option2: {fileID: 11400000, guid: b9641f4c24c1e6f428d2bfc751a69e96, type: 2}
+  eventText: 
+  eventDescription: 
+  whenHappensRound: 0
+  background: {fileID: 0}
+  option1: {fileID: 11400000, guid: bdb74bb508480bd4d87fefca1b867945, type: 2}
+  option2: {fileID: 0}
   ifTwoOptions: 0

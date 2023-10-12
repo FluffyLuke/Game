@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 211442e9f9b940b4bfe530ce36e0282e, type: 3}
-  m_Name: Option2
-  m_EditorClassIdentifier: Assembly-CSharp::StatsObject/StatChanges
+  m_Name: Option1
+  m_EditorClassIdentifier: 
   year: 0
   endGame: 0
   gold: 0
   goldIncome: 0
   age: 0
-  popularity: -15
+  popularity: 5
   maxPopularity: 100
   achievements: []
   effects: []
