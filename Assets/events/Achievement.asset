@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e550e65ec6fb478a9c19e898a6d30eb7, type: 3}
   m_Name: Achievement
   m_EditorClassIdentifier: 
-  achievementName: 
-  longDescription: 
+  achievementName: DUPSKO
+  longDescription: YES

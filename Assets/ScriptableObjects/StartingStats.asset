@@ -16,7 +16,7 @@ MonoBehaviour:
   endGame: 1876
   gold: 100
   goldIncome: 0
-  age: 10
+  age: 21
   popularity: 5
   maxPopularity: 100
   achievements: []

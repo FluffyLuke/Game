@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d3fecc99fc5e454f9e79cc109db968f0, type: 3}
-  m_Name: Rest
+  m_Name: SUPER EVENT 1
   m_EditorClassIdentifier: 
-  eventText: "Postanowi\u0142e\u015B odpocz\u0105\u0107 na jaki\u015B czas."
-  eventDescription: Odpoczywasz.
-  whenHappensRound: -1
+  eventText: Jakis osiogniecie
+  eventDescription: osiagniecie
+  whenHappensRound: 0
   background: {fileID: 21300000, guid: 35736f982b75a8a47a46bb5951ac2571, type: 3}
-  option1: {fileID: 11400000, guid: 73c6bb8c4daf8104c9be0678d8f0dffa, type: 2}
-  option2: {fileID: 11400000, guid: 73c6bb8c4daf8104c9be0678d8f0dffa, type: 2}
-  ifTwoOptions: 0
+  option1: {fileID: 11400000, guid: bdb74bb508480bd4d87fefca1b867945, type: 2}
+  option2: {fileID: 11400000, guid: bdb74bb508480bd4d87fefca1b867945, type: 2}
+  ifTwoOptions: 1

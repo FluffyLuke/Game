@@ -17,14 +17,15 @@ MonoBehaviour:
   gold: 0
   goldIncome: 0
   age: 0
-  popularity: 5
+  popularity: 0
   maxPopularity: 100
-  achievements: []
+  achievements:
+  - {fileID: 11400000, guid: 7499461727931dc45a068e4318c15a85, type: 2}
   effects: []
   actionPoints: 0
   startingActionPoints: 0
-  eventStatChangesText: 
-  buttonText: 
+  eventStatChangesText: No dupsko
+  buttonText: Nima
   additionalEvents: []
   costGold: 0
   costActionPoints: 0

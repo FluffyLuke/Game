@@ -20,8 +20,9 @@ MonoBehaviour:
   popularity: 0
   maxPopularity: 100
   achievements: []
-  effects: []
-  actionPoints: 0
+  effects:
+  - {fileID: 11400000, guid: 63c87ae50cb355d4d8c6e078eb644f5f, type: 2}
+  actionPoints: 5
   startingActionPoints: 0
   eventStatChangesText: "Tracisz reszt\u0119 swoich punkt\xF3w akcji. W nast\u0119pnej
     turze b\u0119dziesz mia\u0142 ich wi\u0119cej."

@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95302f63b99a4673946a4cb61597c7cf, type: 3}
   m_Name: RestEvent
   m_EditorClassIdentifier: 
+  remainingTime: -1
   duration: 1
   goldIncome: 0
   effectName: Wybudzony
-  startingActionPoints: 5
+  startingActionPoints: 0

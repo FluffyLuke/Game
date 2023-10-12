@@ -149,12 +149,24 @@ public class GameManager : MonoBehaviour
          return true;
      }
     
-    public void RunBasicEvent(Event e, int option)
+    public bool RunBasicEvent(Event e, int option)
     {
+        
         print("Running basic event");
         eventText.text = "";
         eventDescription.text = "";
         eventStatChanges.text = "";
+        if (stats.ActionPoints == 0)
+        {
+            eventText.text = "Nie możesz wykonać tej akcji!";
+            return false;
+        }
+
+        if (stats.Effects.Contains(restEvent.option1.Effects[0]))
+        {
+            eventText.text = "Już wypoczywałeś!";
+            return false;
+        }
         var ifUpdated = e.UpdateStats(stats, round, events, option);
         print(ifUpdated);
         if (ifUpdated)
@@ -162,9 +174,10 @@ public class GameManager : MonoBehaviour
             eventText.text = e.eventText;
             eventDescription.text = e.eventDescription;
             eventStatChanges.text = e.option1.eventStatChangesText;
-            return;
+            return true;
         }
         eventText.text = "Nie możesz wykonać tej akcji!";
+        return false;
     }
 
     //ROUND ACTIONS
@@ -172,10 +185,20 @@ public class GameManager : MonoBehaviour
     
     public void Rest()
     {
+        if (stats.Effects.Contains(restEvent.option1.Effects[0]))
+        {
+            eventText.text = "Już wypoczywałeś!";
+            eventDescription.text = "";
+            eventStatChanges.text = "";
+            return;
+        }
         int remainingPoints = stats.ActionPoints;
-        stats.ActionPoints = 0;
-        restEvent.option1.ActionPoints = remainingPoints / 2;
-        RunBasicEvent(restEvent, 1);
+        restEvent.option1.Effects[0].startingActionPoints = remainingPoints / 2;
+        var result = RunBasicEvent(restEvent, 1);
+        if (result == true)
+        {
+            stats.ActionPoints = 0;
+        }
     }
 
     [SerializeField] private Event WriteEvent;
