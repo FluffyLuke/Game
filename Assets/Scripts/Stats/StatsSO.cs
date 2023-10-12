@@ -36,6 +36,12 @@ public class StatsObject : ScriptableObject
     [ SerializeField ]
     private int startingActionPoints;
 
+    public List<Achievement> Achievements1
+    {
+        get => achievements;
+        set => achievements = value;
+    }
+
     public int ActionPoints
     {
         get => actionPoints;
@@ -54,7 +60,10 @@ public class StatsObject : ScriptableObject
         }
     }
 
-    public int EndGame => endGame;
+    public int EndGame {
+        get => endGame;
+        set => goldIncome = value;
+    }
     public int GoldIncome
         {
             get => goldIncome;
@@ -73,7 +82,10 @@ public class StatsObject : ScriptableObject
         }
     }
 
-    public int MaxPopularity => maxPopularity;
+    public int MaxPopularity {
+        get => maxPopularity;
+        set => maxPopularity = value;
+    }
     public List<Achievement> Achievements
     {
         get => achievements;
@@ -116,43 +128,5 @@ public class StatsObject : ScriptableObject
             dataUpdated?.Invoke(); 
         }
     }
-    [CreateAssetMenu(fileName = "StatsChanges", menuName = "ScriptableObjects/StatsChanges", order = 5)]
-    public class StatChanges : StatsObject
-    {
-        public string eventStatChangesText;
-        public string buttonText;
-        public List<Events.Event> additionalEvents;
-        public int costGold;
-        public int costActionPoints;
-        public bool UpdateStats(StatsObject stats, List<Events.Event> events)
-        {
-            if (stats.ActionPoints < costActionPoints)
-            {
-                return false;
-            }
-            if (stats.Gold < costGold)
-            {
-                return false;
-            }
-            foreach (var e in this.Effects)
-            {
-                stats.Effects.Add(e);
-            }
-            foreach (var e in this.Achievements)
-            {
-                stats.Achievements.Add(e);
-            }
-            foreach (var e in additionalEvents)
-            {
-                events.Add(e);
-            }
-            stats.Popularity += Popularity;
-            stats.Gold += Gold;
-            stats.GoldIncome += GoldIncome;
-            stats.ActionPoints += ActionPoints;
-            stats.ActionPoints -= costActionPoints;
-            stats.ActionPoints -= costGold;
-            return true;
-        }
-    }
+    
 }

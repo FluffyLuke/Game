@@ -15,6 +15,7 @@ MonoBehaviour:
   eventText: AddEffect
   eventDescription: AddEffect
   whenHappensRound: 2
-  background: {fileID: 0}
+  background: {fileID: 21300000, guid: 95cac8563477fc54b945acfe29c3ccef, type: 3}
   option1: {fileID: 11400000, guid: 914518f56533d7649b80e93cbc1d0b88, type: 2}
   option2: {fileID: 11400000, guid: f946b9c5829a85045bfd75d9dcdf3420, type: 2}
+  ifTwoOptions: 0

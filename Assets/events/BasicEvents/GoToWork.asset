@@ -12,23 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3fecc99fc5e454f9e79cc109db968f0, type: 3}
   m_Name: GoToWork
   m_EditorClassIdentifier: 
-  eventText: 
-  cost: 0
-  eventDescription: 
-  eventStatChanges: 
-  isEffect: 0
-  eventStatChanges2: 
-  gold: 0
-  goldIncome: 0
-  goldIncomeOption2: 0
-  popularity: 0
-  actionPoints: 0
-  actionPointsOption2: 0
-  otherEvents: []
-  goldOption2: 0
-  popularityOption2: 0
-  otherEventsOption2: []
-  whenHappens: 0
-  ifOption: 0
-  option1: 
-  option2: 
+  eventText: Do pracy idziesz
+  eventDescription: Idziesz do pracy
+  whenHappensRound: -1
+  background: {fileID: 0}
+  option1: {fileID: 11400000, guid: 71095670d88ed7246bd7fd0dd53dfb9c, type: 2}
+  option2: {fileID: 0}

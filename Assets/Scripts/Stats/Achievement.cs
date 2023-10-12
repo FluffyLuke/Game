@@ -1,7 +1,9 @@
+using UnityEngine;
+
 namespace Stats.OtherStats
 {
-    public class Achievement
+    public class Achievement : MonoBehaviour
     {
-        public string name;
+        public string achievementName;
     }
 }

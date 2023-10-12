@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95302f63b99a4673946a4cb61597c7cf, type: 3}
   m_Name: Effect
   m_EditorClassIdentifier: 
-  duration: 1
+  remainingTime: 0
+  duration: 3
   goldIncome: -15
-  effectName: Ospalosc
+  effectName: Dupa
   startingActionPoints: -5

@@ -12,9 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a54462874631b946aeb011fbb4b698d, type: 3}
   m_Name: Stats
   m_EditorClassIdentifier: 
-  year: 3684
-  gold: 324
-  age: 24
-  yearOfDeath: 0
-  popularity: 215
-  maxPopularity: 0
+  year: 1501
+  endGame: 0
+  gold: 100
+  goldIncome: 0
+  age: 11
+  popularity: 5
+  maxPopularity: 100
+  achievements: []
+  effects: []
+  actionPoints: 10
+  startingActionPoints: 10

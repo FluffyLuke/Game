@@ -9,26 +9,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3fecc99fc5e454f9e79cc109db968f0, type: 3}
+  m_Script: {fileID: 11500000, guid: 211442e9f9b940b4bfe530ce36e0282e, type: 3}
   m_Name: GambleWin
-  m_EditorClassIdentifier: 
-  eventText: 
-  cost: 0
-  eventDescription: 
-  eventStatChanges: 
-  isEffect: 0
-  eventStatChanges2: 
+  m_EditorClassIdentifier: Assembly-CSharp::StatsObject/StatChanges
+  year: 0
+  endGame: 0
   gold: 0
   goldIncome: 0
-  goldIncomeOption2: 0
-  popularity: 0
+  age: 0
+  popularity: 5
+  maxPopularity: 100
+  achievements: []
+  effects: []
   actionPoints: 0
-  actionPointsOption2: 0
-  otherEvents: []
-  goldOption2: 0
-  popularityOption2: 0
-  otherEventsOption2: []
-  whenHappens: 0
-  ifOption: 0
-  option1: 
-  option2: 
+  startingActionPoints: 0
+  eventStatChangesText: 
+  buttonText: 
+  additionalEvents: []
+  costGold: 0
+  costActionPoints: 0

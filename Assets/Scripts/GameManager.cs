@@ -2,11 +2,14 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Stats.OtherStats;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.UIElements;
+using Button = UnityEngine.UI.Button;
 using Event = Events.Event;
+using Image = UnityEngine.UI.Image;
 using Random = System.Random;
 
 public class GameManager : MonoBehaviour
@@ -24,8 +27,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Button button2;
     [SerializeField] private TMP_Text button2Text;
     [SerializeField] private List<Button> actionButtons;
+    [SerializeField] private Image BackgroundImage;
 
-    private void OnEnable()
+    private void Start()
     {
         StartGame();
     }
@@ -36,39 +40,53 @@ public class GameManager : MonoBehaviour
         stats.Age = startingStats.Age;
         stats.Gold = startingStats.Gold;
         stats.Year = startingStats.Year;
+        stats.EndGame = startingStats.EndGame;
+        stats.GoldIncome = startingStats.GoldIncome;
+        stats.MaxPopularity = startingStats.MaxPopularity;
         stats.Popularity = startingStats.Popularity;
         stats.Achievements = startingStats.Achievements;
         stats.ActionPoints = startingStats.StartingActionPoints;
         stats.StartingActionPoints = startingStats.StartingActionPoints;
-        stats.Achievements = startingStats.Achievements;
-        stats.Effects = startingStats.Effects;
+        stats.Achievements = new List<Achievement>();
+        stats.Effects = new List<Effect>();
         StartRound();
         
     }
-    public void StartRound()
+    private async void StartRound()
     {
-        eventStatChanges.text = "";
         round += 1;
         stats.Age += 1;
         stats.Year += 1;
-        stats.ActionPoints = startingStats.StartingActionPoints;
         print("Round starting new round! -> " + round);
+
+        if (events.Where(x => x.whenHappensRound == round).ToList().Count == 0)
+        {
+            var randomEvent = UnityEngine.Random.Range(0, 
+                events.Where(x=>x.whenHappensRound == 0)
+                    .ToList().Count-1);
+            print("Running random event! " + events.Where(x => x.whenHappensRound == 0).ToList()[randomEvent].eventDescription);
+            await RunEvent(events.Where(x => x.whenHappensRound == 0).ToList()[randomEvent]);
+            print("Ended random event!");
+        }
         List<Event> currentEvents = events.Where(x => x.whenHappensRound == round).ToList();
         foreach (var e in events.Where(x => x.whenHappensRound == round))
         {
             print("Running event!");
-            RunEvent(e).Wait();
+            await RunEvent(e);
             print("Ended event!");
         }
-
-        var randomEvent = new Random().Next() % events.Where(x => x.whenHappensRound == 0).ToList().Count-1;
-        print("Running random event!");
-        RunEvent(events.Where(x => x.whenHappensRound == 0).ToList()[randomEvent]).Wait();
-        print("Ended random event!");
+        var newList = new List<Effect>();
         foreach(var e in stats.Effects)
         {
-            e.CheckIfTime(stats);
+            print("Checking effects");
+            var ifEffect = e.CheckIfTime(stats);
+            if (ifEffect) newList.Add(e);
         }
+        foreach (var e in newList)
+        {
+            stats.Effects.Remove(e);
+        }
+        stats.ActionPoints = stats.StartingActionPoints;
     }
     public void EndRound()
     {
@@ -76,68 +94,69 @@ public class GameManager : MonoBehaviour
         StartRound();
     }
 
+ 
+
     public void OptionChoose(int option)
     {
         this.optionClick.TrySetResult(option);
     }
-
-    //Events
     public async Task<bool> RunEvent(Event e)
-    {
-        print("Running event");
-        foreach (var actionButton in actionButtons)
-        {
-            actionButton.enabled = false;
-        }
-        eventText.text = e.eventText;
-        eventDescription.text = e.eventDescription;
-        while (true)
-        {
-            int option = 1;
-            if (e.IfOption())
-            {
-                button1.gameObject.SetActive(true);
-                button2.gameObject.SetActive(true);
-                button1.enabled = true;
-                button2.enabled = true;
-                if (e.option1.costActionPoints > stats.ActionPoints || e.option1.costGold > stats.Gold)
-                {
-                    button1.enabled = false;
-                }
-                if (e.option2.costActionPoints > stats.ActionPoints || e.option2.costGold > stats.Gold)
-                {
-                    button2.enabled = false;
-                }
-                button1Text.text = e.option1.buttonText;
-                button2Text.text = e.option2.buttonText;
-                print("Running option check");
-                optionClick = new TaskCompletionSource<int>();
-                option = await optionClick.Task;
-                button1.gameObject.SetActive(false);
-                button2.gameObject.SetActive(false);
-            }
-            eventStatChanges.text = e.GetOption(option).eventStatChangesText;
-
-            if (!e.UpdateStats(stats, round, events, option)) continue;
-            print("Cost to high!");
-            break;
-        }
-        foreach (var actionButton in actionButtons)
-        {
-            actionButton.enabled = true;
-        }
-
-        return true;
-    }
+     {
+         print("Inside event " + e.eventDescription);
+         foreach (var actionButton in actionButtons)
+         {
+             actionButton.enabled = false;
+         }
+         eventText.text = e.eventText;
+         eventDescription.text = e.eventDescription;
+         BackgroundImage.sprite = e.background;
+         while (true)
+         {
+             var option = 1;
+             if (e.IfOption())
+             {
+                 button1.gameObject.SetActive(true);
+                 button2.gameObject.SetActive(true);
+                 button1.enabled = true;
+                 button2.enabled = true;
+                 if (e.option1.costActionPoints > stats.ActionPoints || e.option1.costGold > stats.Gold)
+                 {
+                     button1.enabled = false;
+                 }
+                 if (e.option2.costActionPoints > stats.ActionPoints || e.option2.costGold > stats.Gold)
+                 {
+                     button2.enabled = false;
+                 }
+                 button1Text.text = e.option1.buttonText;
+                 button2Text.text = e.option2.buttonText;
+                 print("Running option check");
+                 optionClick = new TaskCompletionSource<int>();
+                 option = await optionClick.Task;
+                 print("cos2");
+                 button1.gameObject.SetActive(false);
+                 button2.gameObject.SetActive(false);
+             }
+             eventStatChanges.text = e.GetOption(option).eventStatChangesText;
+             print("cos");
+             if (e.UpdateStats(stats, round, events, option)) break;
+             print("Cost to high!");
+         }
+         foreach (var actionButton in actionButtons)
+         {
+             actionButton.enabled = true;
+         }
+         print("Returning event" + e.eventDescription);
+         return true;
+     }
     
-    public void RunBasicEvent(Event e)
+    public void RunBasicEvent(Event e, int option)
     {
         print("Running basic event");
         eventText.text = "";
         eventDescription.text = "";
         eventStatChanges.text = "";
-        var ifUpdated = e.UpdateStats(stats, round, events, 1);
-        
+        var ifUpdated = e.UpdateStats(stats, round, events, option);
+        print(ifUpdated);
         if (ifUpdated)
         {
             eventText.text = e.eventText;
@@ -145,7 +164,7 @@ public class GameManager : MonoBehaviour
             eventStatChanges.text = e.option1.eventStatChangesText;
             return;
         }
-        eventText.text = "ZA MAŁO PUNKTÓW AKCJI!";
+        eventText.text = "Nie możesz wykonać tej akcji!";
     }
 
     //ROUND ACTIONS
@@ -156,7 +175,7 @@ public class GameManager : MonoBehaviour
         int remainingPoints = stats.ActionPoints;
         stats.ActionPoints = 0;
         restEvent.option1.ActionPoints = remainingPoints / 2;
-        stats.Effects.Add(restEvent.option1.Effects[0]);
+        RunBasicEvent(restEvent, 1);
     }
 
     [SerializeField] private Event WriteEvent;
@@ -164,23 +183,21 @@ public class GameManager : MonoBehaviour
     {
         throw new NotImplementedException();
     }
-    [SerializeField] private Event gambleWinEvent;
-    [SerializeField] private Event gambleLoseEvent;
+    [SerializeField] private Event gambleEvent;
     public void Gamble()
     {
-        System.Random rnd = new System.Random();
-        int num = rnd.Next() % 100;
+        int num = UnityEngine.Random.Range(1, 101);
         if (num > 75)
         {
-            RunBasicEvent(gambleWinEvent);
+            RunBasicEvent(gambleEvent, 1);
             return;
         }
-        RunBasicEvent(gambleLoseEvent);
+        RunBasicEvent(gambleEvent, 2);
     }
     [SerializeField] private Event goToWorkEvent;
     public void GoToWork()
     {
-        RunBasicEvent(goToWorkEvent);
+        RunBasicEvent(goToWorkEvent, 1);
     }
     public void Test()
     {

@@ -10,23 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d3fecc99fc5e454f9e79cc109db968f0, type: 3}
-  m_Name: RestNextTurn
+  m_Name: Gamble
   m_EditorClassIdentifier: 
-  eventText: 
-  cost: 0
-  eventDescription: 
-  eventStatChanges: 
-  eventStatChanges2: 
-  gold: 0
-  goldIncome: 0
-  popularity: 0
-  actionPoints: 0
-  actionPointsOption2: 0
-  otherEvents: []
-  goldOption2: 0
-  popularityOption2: 0
-  otherEventsOption2: []
-  whenHappens: 0
-  ifOption: 0
-  option1: 
-  option2: 
+  eventText: idziesz zagrac w karty
+  eventDescription: grasz w karty
+  whenHappensRound: -1
+  background: {fileID: 0}
+  option1: {fileID: 11400000, guid: 89df660d46cfa6340a7cfec8286dd0da, type: 2}
+  option2: {fileID: 11400000, guid: a373284bc5cca534ca52b884a62d833f, type: 2}

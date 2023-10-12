@@ -13,6 +13,13 @@ MonoBehaviour:
   m_Name: StartingStats
   m_EditorClassIdentifier: 
   year: 1500
+  endGame: 1600
   gold: 100
+  goldIncome: 0
   age: 10
-  yearOfDeath: 41
+  popularity: 5
+  maxPopularity: 100
+  achievements: []
+  effects: []
+  actionPoints: 10
+  startingActionPoints: 10

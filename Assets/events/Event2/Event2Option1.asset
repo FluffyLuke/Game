@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 211442e9f9b940b4bfe530ce36e0282e, type: 3}
   m_Name: Event2Option1
   m_EditorClassIdentifier: Assembly-CSharp::StatsObject/StatChanges
   year: 0
@@ -19,11 +19,12 @@ MonoBehaviour:
   age: 0
   popularity: 0
   maxPopularity: 100
+  achievements: []
   effects:
   - {fileID: 11400000, guid: 73661a18ba9d844448e458dce8c74a57, type: 2}
   actionPoints: 0
   startingActionPoints: 0
-  eventStatChangesText: 
+  eventStatChangesText: Zmiany jakies
   buttonText: 
   additionalEvents: []
   costGold: 0

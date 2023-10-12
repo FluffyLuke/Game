@@ -15,6 +15,7 @@ MonoBehaviour:
   eventText: Opis event
   eventDescription: Event nr 1
   whenHappensRound: 1
-  background: {fileID: 0}
+  background: {fileID: 21300000, guid: 35736f982b75a8a47a46bb5951ac2571, type: 3}
   option1: {fileID: 11400000, guid: 6fb0450fae58e2e40b5430c3537b6f90, type: 2}
   option2: {fileID: 11400000, guid: aea2b1bd6d78b99499e55fad01e6fa65, type: 2}
+  ifTwoOptions: 1

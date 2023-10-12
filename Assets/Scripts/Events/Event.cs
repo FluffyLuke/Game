@@ -11,9 +11,10 @@ namespace Events
         public string eventText;
         public string eventDescription;
         public int whenHappensRound;
-        public Image background;
-        public StatsObject.StatChanges option1;
-        public StatsObject.StatChanges option2;
+        public Sprite background;
+        public StatChanges option1;
+        public StatChanges option2;
+        public bool ifTwoOptions;
 
         public bool UpdateStats(StatsObject stats, int round, List<Events.Event> events, int option)
         {
@@ -24,7 +25,7 @@ namespace Events
 
         public bool IfOption()
         {
-            if (option2 != null && option1 != null)
+            if (ifTwoOptions)
             {
                 return true;
             }
@@ -32,7 +33,7 @@ namespace Events
             return false;
         }
 
-        public StatsObject.StatChanges GetOption(int option)
+        public StatChanges GetOption(int option)
         {
             if (option == 1)
             {

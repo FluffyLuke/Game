@@ -15,6 +15,7 @@ MonoBehaviour:
   eventText: RandomEvent
   eventDescription: Some RandomEvent
   whenHappensRound: 0
-  background: {fileID: 0}
-  option1: {fileID: 11400000, guid: 7927ff6fc16957343a96f7776a918d1d, type: 2}
+  background: {fileID: 21300000, guid: c47547b21388362439135121d084740a, type: 3}
+  option1: {fileID: 11400000, guid: 98d7ea46cd46f9c4080fbd884f626eb5, type: 2}
   option2: {fileID: 0}
+  ifTwoOptions: 0

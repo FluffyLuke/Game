@@ -17,9 +17,10 @@ namespace Counters
             }
             StatsObject.dataUpdated += UpdateCounter;
         }
-
+        
         private void UpdateCounter()
         {
+            text.text = "";
             foreach (var e in statsObject.Effects)
             {
                 text.text += e.effectName + "\n";

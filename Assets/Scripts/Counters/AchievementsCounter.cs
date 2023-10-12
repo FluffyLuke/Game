@@ -13,16 +13,17 @@ namespace Counters
         {
             foreach (var e in statsObject.Achievements)
             {
-                text.text += e.name + "\n";
+                text.text += e.achievementName + "\n";
             }
             StatsObject.dataUpdated += UpdateCounter;
         }
 
         private void UpdateCounter()
         {
+            text.text = "";
             foreach (var e in statsObject.Achievements)
             {
-                text.text += e.name + "\n";
+                text.text += e.achievementName + "\n";
             }
         }
     }
