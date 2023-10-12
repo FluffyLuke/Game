@@ -17,6 +17,6 @@ public class GoldCounter : MonoBehaviour
 
     private void UpdateCounter()
     {
-        this.text.text = "Pieniądze: " + statsObject.Gold.ToString();
+        this.text.text = statsObject.Gold.ToString();
     }
 }

@@ -10,11 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0a54462874631b946aeb011fbb4b698d, type: 3}
-  m_Name: Stats
+  m_Name: StartingStats
   m_EditorClassIdentifier: 
-  year: 3684
-  gold: 324
-  age: 24
-  yearOfDeath: 0
-  popularity: 215
-  maxPopularity: 0
+  year: 1500
+  gold: 100
+  age: 10
+  yearOfDeath: 41

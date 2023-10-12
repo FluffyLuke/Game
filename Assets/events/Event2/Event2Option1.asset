@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: Event2Option1
+  m_EditorClassIdentifier: Assembly-CSharp::StatsObject/StatChanges
+  year: 0
+  endGame: 0
+  gold: 0
+  goldIncome: 0
+  age: 0
+  popularity: 0
+  maxPopularity: 100
+  effects:
+  - {fileID: 11400000, guid: 73661a18ba9d844448e458dce8c74a57, type: 2}
+  actionPoints: 0
+  startingActionPoints: 0
+  eventStatChangesText: 
+  buttonText: 
+  additionalEvents: []
+  costGold: 0
+  costActionPoints: 0
