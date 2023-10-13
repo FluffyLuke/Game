@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ifGameStarted: 0
   year: 0
+  round: 0
   endGame: 0
   gold: 0
   goldIncome: 0
@@ -29,4 +30,4 @@ MonoBehaviour:
   additionalEvents: []
   costGold: 0
   costActionPoints: 0
-  nazwaSceny: 
+  nazwaSceny: TopDownShooter

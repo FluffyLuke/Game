@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3fecc99fc5e454f9e79cc109db968f0, type: 3}
   m_Name: Write
   m_EditorClassIdentifier: 
-  eventText: Piszesz texk :3
+  eventText: Postanowiles napisac utwor
   eventDescription: Piszesz
   whenHappensRound: -1
   background: {fileID: 0}
   option1: {fileID: 11400000, guid: 1dede20c2f6556845a46246c3eda1b12, type: 2}
   option2: {fileID: 11400000, guid: 1dede20c2f6556845a46246c3eda1b12, type: 2}
+  ifTwoOptions: 0

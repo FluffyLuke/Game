@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3fecc99fc5e454f9e79cc109db968f0, type: 3}
   m_Name: Tutorial
   m_EditorClassIdentifier: 
-  eventText: Witaj w "Zemscie Fredry"! Twoim zadaniem jest przejsc przez zycie Fredrego,
+  eventText: Witaj w "Oczami autora"! Twoim zadaniem jest przejsc przez zycie Fredrego,
     starajac sie dbac o swoja rodzine jak i popularnosc. Za 30 tur zostaniesz rozliczony
     ze swoich akcji. powodzenia!
   eventDescription: Tutorial 1

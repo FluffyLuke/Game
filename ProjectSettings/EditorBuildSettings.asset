@@ -14,4 +14,25 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/End.unity
     guid: 92df0716d622b8b49ba22fad28892577
+  - enabled: 1
+    path: Assets/Scenes/Malpa.unity
+    guid: ec7750d0892cf3a47a2ad8326030f68f
+  - enabled: 1
+    path: Assets/Scenes/NaprawaMuru.unity
+    guid: 4fc562cc4a2af3047904bc865da07939
+  - enabled: 1
+    path: Assets/Scenes/ShootingFight.unity
+    guid: 02fb9ddffd987004ea1dd935300cad87
+  - enabled: 1
+    path: Assets/Scenes/TopDownShooter.unity
+    guid: 773bf329b8da4c34681cbec69d403872
+  - enabled: 1
+    path: Assets/Scenes/TypingMalpa.unity
+    guid: 3e35f42b7be5b154f927f96fbbdade80
+  - enabled: 1
+    path: Assets/Scenes/TypingRandom.unity
+    guid: a645cc577273bc9478207c91df6566c9
+  - enabled: 1
+    path: Assets/Scenes/TypingZemsta.unity
+    guid: 4fbe21683855b434bbf8b02cc2bf1ae5
   m_configObjects: {}

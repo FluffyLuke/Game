@@ -370,8 +370,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.25040972, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -0.75, y: -0.0018615723}
-  m_SizeDelta: {x: 1.5, y: 1.0299988}
+  m_AnchoredPosition: {x: -328.52814, y: -0.5149994}
+  m_SizeDelta: {x: 142.9437, y: 1.03}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &145722145
 MonoBehaviour:
@@ -1041,7 +1041,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &426027142
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3703,8 +3703,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.75063896, y: 1}
-  m_AnchoredPosition: {x: -0.00012207031, y: -0.0018005371}
-  m_SizeDelta: {x: -0.00021362, y: 1.0301}
+  m_AnchoredPosition: {x: -196.45096, y: -0.0017929077}
+  m_SizeDelta: {x: 121.2181, y: 1.0301}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1235246736
 MonoBehaviour:
@@ -4133,8 +4133,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.75063896, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.7199707, y: 0.4975586}
-  m_SizeDelta: {x: 1.5599976, y: 0.02999878}
+  m_AnchoredPosition: {x: -67.92, y: -0.51503}
+  m_SizeDelta: {x: 135.84, y: 1.03}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1313849186
 MonoBehaviour:
@@ -5323,7 +5323,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ade61b84b932d9148b8d733538a8653b, type: 2}
   - {fileID: 11400000, guid: cf9d34bdd1918d0478caab810016c9ed, type: 2}
   - {fileID: 11400000, guid: 8b226fd878f6dd14cb227a0ef44a73d4, type: 2}
-  round: 0
   eventText: {fileID: 862862199}
   eventDescription: {fileID: 1070321420}
   eventStatChanges: {fileID: 56060152}
@@ -5340,6 +5339,7 @@ MonoBehaviour:
   BackgroundImage: {fileID: 985086852}
   restEvent: {fileID: 11400000, guid: e6ca753df75deb748aecc50b17fe072f, type: 2}
   WriteEvent: {fileID: 11400000, guid: a872f9df42155804cb46b727f1b45305, type: 2}
+  HowManyTimesWritten: 0
   gambleEvent: {fileID: 11400000, guid: 74c6cb0c7dd24374c907cdfb80b556b0, type: 2}
   goToWorkEvent: {fileID: 11400000, guid: f62d33e75b3c3c540a370a4a9227cc3a, type: 2}
 --- !u!4 &1866310965
