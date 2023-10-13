@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3fecc99fc5e454f9e79cc109db968f0, type: 3}
   m_Name: Tutorial
   m_EditorClassIdentifier: 
-  eventText: Witaj w "Zemscie Fredry"! Twoim zadaniem jest przejsc przez zycie Fredrego,
-    starajac sie dbac o swoja rodzine jak i popularnosc. Za 30 tur zostaniesz rozliczony
-    ze swoich akcji. powodzenia!
-  eventDescription: Tutorial 1
+  eventText: Tutorial
+  eventDescription: Witaj w "Zemscie Fredry"! Twoim zadaniem jest przejsc przez zycie
+    Fredrego, starajac sie dbac o swoja rodzine jak i popularnosc. Za 30 tur zostaniesz
+    rozliczony ze swoich akcji. powodzenia!
   whenHappensRound: 1
   background: {fileID: 0}
   option1: {fileID: 11400000, guid: e655a049e3f79e746998bc735d7ef2f9, type: 2}
