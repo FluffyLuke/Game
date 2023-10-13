@@ -42,7 +42,6 @@ public class GameManager : MonoBehaviour
     public void StartGame()
     {
         stats.round = 0;
-        this.HowManyTimesWritten = 0;
         stats.Age = startingStats.Age;
         stats.Gold = startingStats.Gold;
         stats.Year = startingStats.Year;
@@ -228,20 +227,21 @@ public class GameManager : MonoBehaviour
     }
 
     [SerializeField] private Event WriteEvent;
-    [SerializeField] private int HowManyTimesWritten = 0;
     public void Write()
     {
-        HowManyTimesWritten += 1;
-        if (HowManyTimesWritten == 1)
+        
+        if (stats.written == 0)
         {
             WriteEvent.option1.nazwaSceny = "TypingMalpa";
             RunBasicEvent(WriteEvent, 1);
+            stats.written = 1;
             return;
         }
-        if (HowManyTimesWritten == 2)
+        if (stats.written == 1)
         {
             WriteEvent.option1.nazwaSceny = "TypingZemsta";
             RunBasicEvent(WriteEvent, 1);
+            stats.written = 2;
             return;
         }
 

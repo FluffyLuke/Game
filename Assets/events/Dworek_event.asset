@@ -15,7 +15,7 @@ MonoBehaviour:
   eventText: Kupno Dworku
   eventDescription: Pojawila sie mozliwosc kupna dworku w Chorazczyznie
   whenHappensRound: 9
-  background: {fileID: 21300000, guid: 718be7b8cca746b47a3e57c60599930f, type: 3}
+  background: {fileID: 0}
   option1: {fileID: 11400000, guid: cdb82f77c0ce8e64eaf765c58a227439, type: 2}
   option2: {fileID: 11400000, guid: 294e2985867c4234cb26748cfe66d388, type: 2}
   ifTwoOptions: 1

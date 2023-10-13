@@ -1,0 +1,7 @@
+Oczami Autora
+
+Gra polega na wcieleniu się w rolę Aleksandra Fredry od początku aż do końca jego kariery. 
+Gracz podejmuje decyzje próbując zdobyć jak największą popularność i ilość pieniędzy.
+Akcje możliwe do wykonania podczas tury użuwają punktów akcji, co turę dostaje się ich 15
+Każda akcja z dolnego paska zabiera 5pkt akcji.
+W grze występują minigry, aby ich nie przegapić użyj funkcji 'pisz' chociaż 2 razy.

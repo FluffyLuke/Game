@@ -12,6 +12,8 @@ public class StatsObject : ScriptableObject
 
     public bool ifGameStarted;
     public static event DataUpdated dataUpdated;
+
+    public int written = 0;
     //General Stats
     [ SerializeField ]
     private int year;
